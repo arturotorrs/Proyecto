@@ -11,4 +11,4 @@ RUN mkdir -p data
 
 EXPOSE 4000
 
-CMD ["node", "src/server.js"]
+CMD ["sh", "-c", "node src/db/seed.js && node src/server.js"]
